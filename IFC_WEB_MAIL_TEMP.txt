@@ -1,0 +1,23 @@
+-- Create table
+create table IFC_WEB_MAIL_TEMP
+(
+  mail_id   NUMBER,
+  user_name VARCHAR2(100),
+  mail_addr VARCHAR2(100),
+  subject   VARCHAR2(250),
+  message   LONG,
+  message1  VARCHAR2(4000),
+  message2  VARCHAR2(4000)
+)
+tablespace IFC_TS_DATA
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
